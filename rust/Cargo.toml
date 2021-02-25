@@ -1,0 +1,8 @@
+[package]
+name = "regex-are-broken"
+version = "0.1.0"
+authors = ["Michal Nazarewicz <mina86@mina86.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"

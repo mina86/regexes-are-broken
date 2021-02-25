@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang=en>
+<title>Regular expressions are broken</title>
+<p>
+<script>
+function check(re) {
+	var m = re.exec('foobarbaz');
+	return m ? m[0] : '<i>(undefined)</i>';
+}
+document.querySelector('p').innerText =
+	check(/foo|foobar/) + ' ' + check(/foobar|foo/);
+</script>
